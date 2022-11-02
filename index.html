@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --green: #92C353;
+            --input-field: #ccc;
+        }
+        html, body {
+            height: 100%;
+            
+        }
+        body {
+            
+            background-color: #aaa;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <!--
+        attributes:
+            progress: Number | Optional | 0-100
+    -->
+    <progress-bar></progress-bar>
+    <div style="margin-top: 2rem;">
+        <button onclick="setRandomAttribute()">Random progress</button>
+        <button onclick="setIndeterminate()">Set indeterminate</button>
+    </div>
+</section>
+<script src="components/ProgressBar.js"></script>
+
+<script>
+function setRandomAttribute () {
+    let random = Math.round(Math.random() * 100)
+    document.querySelector('progress-bar').setAttribute('progress', random)
+}
+
+function setIndeterminate () {
+
+}
+</script>
+</body>
+</html>
