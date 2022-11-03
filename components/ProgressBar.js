@@ -12,6 +12,8 @@ const styles = `
     top: 0;
     left: 0;
     transition: width 100ms linear;
+
+    background-color: var(--green)
 }
 :host .progress.indetermined .bar {
     width: 10%;
@@ -29,7 +31,7 @@ const styles = `
     }
     100% {
         width: 10%;
-        left: 100%;
+        left: 90%;
     }
 }
 `
